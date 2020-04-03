@@ -5,19 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GoToLevel : MonoBehaviour
 {
-    int BaseLevel = 1;
+    public int BaseLevel = 2;
 
     public void LoadLevel(int level)
     {
         SceneManager.LoadScene(level + BaseLevel);
-    }
-    public void NextPage()
-    {
-
-    }
-
-    public void PreviousPage()
-    {
-
     }
 }
