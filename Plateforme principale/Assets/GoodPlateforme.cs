@@ -7,7 +7,7 @@ public class GoodPlateforme : MonoBehaviour
 {
 	public Transform target1;
 
-	private void OnCollisionEnter(Collision other)
+	private void OnCollisionStay(Collision other)
 	{
 		if (target1.GetComponent<Renderer>().material.color == gameObject.GetComponent<Renderer>().material.color)
 		{
@@ -17,5 +17,10 @@ public class GoodPlateforme : MonoBehaviour
 		{
 			gameObject.GetComponent<Collider>().isTrigger = true;
 		}
+	}
+
+	public void Update()
+	{
+		OnCollisionStay(GetComponent<Collision>());
 	}
 }
