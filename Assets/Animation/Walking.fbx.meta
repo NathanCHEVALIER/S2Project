@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leila
+    second: {fileID: 2100000, guid: e25fb47159d0eca44b4204ab20f30b48, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
