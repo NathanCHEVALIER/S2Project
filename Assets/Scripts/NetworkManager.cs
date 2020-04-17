@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NetworkManager : MonoBehaviour
+public class NetworkManager : Photon.PunBehaviour
 {
     public GameObject lobbyCam;
     public Transform spawnPoint;
@@ -38,7 +38,7 @@ public class NetworkManager : MonoBehaviour
     public override void OnJoinedRoom()
     {
         lobbyCam.SetActive(false);
-        GameObject player = PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation, 0);
+        GameObject player = PhotonNetwork.Instantiate("Prefabs/" + playerPrefabName, spawnPoint.position, spawnPoint.rotation, 0);
     }
     
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
