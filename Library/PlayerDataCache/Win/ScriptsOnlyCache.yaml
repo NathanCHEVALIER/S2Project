@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - LunchPadPlateform
     - MainMenu
     - NetworkManager
+    - NetworkPlayer
     - OptionsSettings
     - PauseMenu
     - PhotonRigidbodyView
@@ -94,6 +95,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11844}
     - Class: 114
       Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11904}
     - Class: 114
@@ -194,6 +197,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11872}
     - Class: 114
+      Script: {instanceID: 11874}
+    - Class: 114
       Script: {instanceID: 11900}
     - Class: 114
       Script: {instanceID: 11996}
@@ -290,6 +295,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11834}
     - Class: 114
       Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11900}
     - Class: 114
@@ -391,6 +398,69 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/Lobby.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11206}
+    - Class: 114
+      Script: {instanceID: 11394}
+    - Class: 114
+      Script: {instanceID: 11440}
+    - Class: 114
+      Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 12040}
+    - Class: 114
+      Script: {instanceID: 12296}
+    - Class: 114
+      Script: {instanceID: 12832}
+    - Class: 114
+      Script: {instanceID: 13174}
+    - Class: 114
+      Script: {instanceID: 13246}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Main menu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -475,8 +545,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
     - Class: 23
@@ -490,8 +558,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 65
-      Script: {instanceID: 0}
-    - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -511,8 +577,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11872}
     - Class: 114
       Script: {instanceID: 11900}
-    - Class: 114
-      Script: {instanceID: 12040}
     - Class: 114
       Script: {instanceID: 12296}
     - Class: 114
@@ -870,7 +934,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: 6741619a6f2cfef3a2ee0f3fdcb4c14c
+      Hash: 6e8f1ce4a9e702254c18ac5941d9ca0d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkPlayer
@@ -936,7 +1000,7 @@ ScriptsOnlyBuild:
     className: OptionsSettings
   - hash:
       serializedVersion: 2
-      Hash: 3d314c181c08a6ab203caafc365e619d
+      Hash: c563391de0693ae7df0fcd4f0c7f2014
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager
@@ -1482,4 +1546,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LVL0.unity
   - Assets/Scenes/LVL1.unity
   - Assets/Scenes/Test Multi.unity
+  - Assets/Scenes/Lobby.unity
   playerPath: D:/natha/Documents/Programming Hub/S2Project/Builds/New Unity Project.exe

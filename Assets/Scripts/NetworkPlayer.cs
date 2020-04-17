@@ -1,14 +1,17 @@
-﻿using UnityEngine;
+﻿using TMPro.Examples;
+using UnityEngine;
 
 public class NetworkPlayer : Photon.MonoBehaviour
 {
-    public GameObject localCam;
+    public Camera localCam;
+
+    private bool Status = false;
     
     void Start()
     {
         if (!photonView.isMine)
         {
-            localCam.SetActive(false);
+            localCam.enabled = this.Status;
 
             MonoBehaviour[] scripts = GetComponents<MonoBehaviour>();
 
@@ -21,4 +24,18 @@ public class NetworkPlayer : Photon.MonoBehaviour
             }
         }
     }
+
+    void Update()
+    {
+        localCam.enabled = this.Status;
+    }
+
+    public bool setStatus(bool status = true)
+    {
+        this.Status = status;
+        localCam.enabled = this.Status;
+        transform.Rotate(0, -90, 0);
+        return status;
+    }
+    
 }
