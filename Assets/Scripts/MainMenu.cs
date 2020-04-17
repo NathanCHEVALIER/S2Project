@@ -16,4 +16,10 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quitting the game");
         Application.Quit();
     }
+    
+    public void StartMulti()
+    {
+        SceneManager.LoadScene("Test Multi");
+    }
+
 }

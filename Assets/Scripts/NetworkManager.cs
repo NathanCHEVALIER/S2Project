@@ -38,7 +38,7 @@ public class NetworkManager : Photon.PunBehaviour
     public override void OnJoinedRoom()
     {
         lobbyCam.SetActive(false);
-        GameObject player = PhotonNetwork.Instantiate("Prefabs/" + playerPrefabName, spawnPoint.position, spawnPoint.rotation, 0);
+        GameObject player = PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation, 0);
     }
     
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
