@@ -1,64 +1,84 @@
-h1 {
-	text-align: center;
-	font-familly: Verdana;
-	font-size: 300%;
-	font-weight: bold;
-	}
-	
-h2 {
-	font-familly: Verdana;
-	font-size: 200%;
-	font-weight: bold;
-	}
-	
-p  {
-	font-familly: Arial;
-	font-size: 100%;
-	}
-	
-header{
-	color: white;
-	background-color: #00008B;
-	border-radius: 10px;
-	padding-right: 5px;
-	padding-left: 5px;
-	}
-	
-nav  {
-	float: left;
-	background-color: #E4E2E0;
-	width: 200 px;
-	border-radius: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	}
-	
-section {
-	height: 500 px;
-	margin-left: 0 px;
-	border-radius: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	}
-	
+body {
+	background-image: url(images/image_de_fond.png);
+}
+
+div.centre {
+	margin-bottom: 260px;
+	margin-left: 600px;
+	margin-right: 600 px;
+	margin-top: 260px;
+	width: 300px;
+	height: 300px;
+	border: 5px solid #333;
+	background-image: url(images/image_centrale.png);
+	background-color: #000000;
+}
+
 footer {
 	color: white;
 	background-color: #00008B;
 	border-radius: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-top: 10px;
+	margin-top: -100px;
 	font-weight: bold;
-	}
+}
 
-.rouge{
-	color: red;
-	}
-	
-.vert{
-	color: green;
-	}
+.centre .bouton1 {
+  position: absolute;
+  top: 41.9%;
+  left: 43.6%;
+  bottom: 45.1%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.centre .bouton1:hover {
+  background-color: blue;
+}
+
+.centre .bouton2 {
+  position: absolute;
+  top: 55.2%;
+  right: 56%;
+  left: 50.2%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.centre .bouton2:hover {
+  background-color: blue;
+}
+
+.centre .bouton3 {
+  position: absolute;
+  top: 68.5%;
+  left: 56.8%;
+  right: 62%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #white;
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.centre .bouton3:hover {
+  background-color: blue;
+}

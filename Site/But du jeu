@@ -2,8 +2,8 @@
 	<head>
 	
 		<meta charset="UTF-8">
-		<title>ColorDimension Website</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>But du jeu</title>
+		<link rel="stylesheet" type="text/css" href="style2.css" />
 		
 	</head>
 	
@@ -63,48 +63,57 @@
 			<table border="3">
 				<tr>
 					<td bgcolor="0000FF">Tâche à effectuer</td>
-					<td bgcolor="grey">Soutenance 1 (prévu)</td>
-					<td bgcolor="grey">Soutenance 1 (fait)</td>
+					<td bgcolor="grey">Soutenance 1</td>
+					<td bgcolor="grey">Soutenance 2</td>
+					<td bgcolor="grey">Soutenance 3</td>
 				</tr>
 				<tr>
 					<td>Base du jeu : déplacer le personnage</td>
-					<td>100%</td>
 					<td><div class="vert">100%</div></td>
+					<td><div class="vert">100%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 				<tr>
 					<td>Gestion multijoueur</td>
-					<td>50%</td>
 					<td><div class="vert">50%</div></td>
+					<td><div class="vert">75%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 				<tr>
 					<td>Gestion des plateformes</td>
-					<td>25%</td>
-					<td bgcolor="green">75%</td>
+					<td><div class="vert">75%</div></td>
+					<td><div class="vert">90%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 				<tr>
 					<td>Ennemis et obstacles</td>
 					<td>0%</td>
-					<td>0%</td>
+					<td><div class="vert">50%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 				<tr>
 					<td>Graphismes 3D et animations</td>
 					<td>0%</td>
-					<td>0%</td>
+					<td><div class="vert">30%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 				<tr>
 					<td>Graphismes 2D et son</td>
 					<td>0%</td>
-					<td>0%</td>
+					<td><div class="vert">30%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 				<tr>
 					<td>Site web et documentation</td>
-					<td>20%</td>
 					<td><div class="vert">20%</div></td>
+					<td><div class="vert">60%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 				<tr>
 					<td>Level design, menus</td>
 					<td>0%</td>
-					<td>0%</td>
+					<td><div class="vert">50%</div></td>
+					<td bgcolor="red"></td>
 				</tr>
 			</table>
 			</br>
