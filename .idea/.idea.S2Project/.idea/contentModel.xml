@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\natha\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -126,6 +126,7 @@
           <e p="Delete.cs" t="Include" />
           <e p="GoodPlateforme.cs" t="Include" />
           <e p="GoToLevel.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
           <e p="LunchPadPlateform.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="NetworkManager.cs" t="Include" />

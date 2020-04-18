@@ -5,12 +5,14 @@ ScriptsOnlyBuild:
     - ChangeSceneAfterDelayScript
     - Delete
     - GoToLevel
+    - LevelManager
     - LunchPadPlateform
     - MainMenu
     - NetworkManager
     - NetworkPlayer
     - OptionsSettings
     - PauseMenu
+    - PhotonAnimatorView
     - PhotonRigidbodyView
     - PhotonTransformView
     - PhotonView
@@ -85,6 +87,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11206}
+    - Class: 114
+      Script: {instanceID: 11354}
     - Class: 114
       Script: {instanceID: 11440}
     - Class: 114
@@ -182,6 +186,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11206}
+    - Class: 114
+      Script: {instanceID: 11354}
     - Class: 114
       Script: {instanceID: 11440}
     - Class: 114
@@ -281,6 +287,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11206}
+    - Class: 114
+      Script: {instanceID: 11354}
     - Class: 114
       Script: {instanceID: 11440}
     - Class: 114
@@ -587,6 +595,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13126}
     - Class: 114
       Script: {instanceID: 13246}
+    - Class: 114
+      Script: {instanceID: 57258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1536,6 +1546,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 99159f223aa7ef1f7fa5c4044423dbdf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/Introduction.unity

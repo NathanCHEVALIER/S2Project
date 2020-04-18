@@ -17,6 +17,8 @@ public class NetworkManager : Photon.PunBehaviour
     private int playerID;
     private GameObject player;
 
+    private GameObject playerUI;
+
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings(Version);
@@ -49,6 +51,7 @@ public class NetworkManager : Photon.PunBehaviour
         DontDestroyOnLoad(lobbyCam);
         player = PhotonNetwork.Instantiate(playerPrefabName, spawnPoints[playerID - 1].position, spawnPoints[playerID - 1].rotation, 0);
         DontDestroyOnLoad(player);
+        player.tag = "MyPlayer";
     }
     
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
@@ -61,14 +64,14 @@ public class NetworkManager : Photon.PunBehaviour
         print("Player DISconnected");
     }
     
-    public void LaunchLevel()
+    public void PreLoadLevel()
     {
         photonView.RPC("PrepareLevel", PhotonTargets.All, true);
 
         if (PhotonNetwork.isMasterClient)
         {
             PhotonNetwork.isMessageQueueRunning = false;
-            //new WaitForSeconds(1f);
+            new WaitForSeconds(1f);
             PhotonNetwork.LoadLevel("Test Multi");
         }
         PhotonNetwork.isMessageQueueRunning = true;
@@ -78,14 +81,12 @@ public class NetworkManager : Photon.PunBehaviour
     void PrepareLevel(bool state)
     {
         NetworkPlayer NetPlayer = player.GetComponent<NetworkPlayer>();
-        bool res = NetPlayer.setStatus(state, playerID);
+        NetPlayer.setStatus(state, playerID);
         
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         foreach (var otherplayer in players)
         {
             DontDestroyOnLoad(otherplayer);
-            //otherplayer.gameObject.setActive = true;
         }
-        
     }
 }

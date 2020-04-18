@@ -121,6 +121,7 @@
      <Compile Include="Assets\Scripts\Delete.cs" />
      <Compile Include="Assets\Scripts\GoToLevel.cs" />
      <Compile Include="Assets\Scripts\GoodPlateforme.cs" />
+     <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\LunchPadPlateform.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\NetworkManager.cs" />

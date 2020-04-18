@@ -4,30 +4,35 @@ using Photon;
 using TMPro.Examples;
 using UnityEngine;
 
-public class NetworkPlayer : Photon.PunBehaviour//, IPunObservable
+public class NetworkPlayer : Photon.PunBehaviour
 {
     public Camera localCam;
     private Camera waitCam;
 
     private bool Status = false;
+    private bool IsRunning = false;
     
     void Start()
     {
-        /*if (!photonView.isMine)
+        UnityEngine.MonoBehaviour[] scripts = GetComponents<UnityEngine.MonoBehaviour>();
+        if (!photonView.isMine)
         {
             localCam.enabled = this.Status;
-
-            UnityEngine.MonoBehaviour[] scripts = GetComponents<UnityEngine.MonoBehaviour>();
-
+            
             for (int i = 0; i < scripts.Length; i++)
             {
-                if (scripts[i] is NetworkPlayer) continue;
-                else if (scripts[i] is PhotonView) continue;
-                else if (scripts[i] is AnimatorControler) continue;
-
-                scripts[i].enabled = false;
+                if (scripts[i] is PlayerMvmt) scripts[i].enabled = false;
+                else if (scripts[i] is AnimatorControler) scripts[i].enabled = false;
+                else if (!IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = false;
             }
-        }*/
+        }
+        else
+        {
+            for (int i = 0; i < scripts.Length; i++)
+            {
+                if (!IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = false;
+            }
+        }
     }
 
     void Update()
@@ -35,14 +40,13 @@ public class NetworkPlayer : Photon.PunBehaviour//, IPunObservable
         localCam.enabled = this.Status;
     }
 
-    public bool setStatus(bool status, int id)
+    public void setStatus(bool status, int id)
     {
         if (!this.Status && status)
         {
             this.Status = status;
             setCameraOn(id);
         }
-        return status;
     }
 
     public void setCameraOn(int id)
@@ -55,4 +59,14 @@ public class NetworkPlayer : Photon.PunBehaviour//, IPunObservable
         }
     }
 
+    public void enableRunning()
+    {
+        IsRunning = true;
+        UnityEngine.MonoBehaviour[] scripts = GetComponents<UnityEngine.MonoBehaviour>();
+        
+        for (int i = 0; i < scripts.Length; i++)
+        {
+            if (IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = true;
+        }
+    }
 }

@@ -1724,7 +1724,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1625495731}
-        m_MethodName: LaunchLevel
+        m_MethodName: PreLoadLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

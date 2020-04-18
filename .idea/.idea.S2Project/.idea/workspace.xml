@@ -23,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonClasses.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Photon Unity Networking/UtilityScripts/TimeKeeper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeSceneAfterDelayScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs" root0="FORCE_HIGHLIGHTING" />
@@ -35,6 +36,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMvmt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorControler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
       </list>
     </option>
@@ -72,6 +74,7 @@
       <workItem from="1587149488263" duration="10381000" />
       <workItem from="1587199746418" duration="9003000" />
       <workItem from="1587213185511" duration="15521000" />
+      <workItem from="1587243647008" duration="5995000" />
     </task>
     <servers />
   </component>
