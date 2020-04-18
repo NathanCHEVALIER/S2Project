@@ -17,6 +17,7 @@ public class AnimatorControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         InputY = Input.GetAxis("Jump");
         InputX = Input.GetAxis("Horizontal");
         animator.SetFloat("InputY", InputY);

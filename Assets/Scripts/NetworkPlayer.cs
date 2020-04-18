@@ -4,7 +4,7 @@ using Photon;
 using TMPro.Examples;
 using UnityEngine;
 
-public class NetworkPlayer : Photon.PunBehaviour, IPunObservable
+public class NetworkPlayer : Photon.PunBehaviour//, IPunObservable
 {
     public Camera localCam;
     private Camera waitCam;
@@ -13,7 +13,7 @@ public class NetworkPlayer : Photon.PunBehaviour, IPunObservable
     
     void Start()
     {
-        if (!photonView.isMine)
+        /*if (!photonView.isMine)
         {
             localCam.enabled = this.Status;
 
@@ -23,13 +23,11 @@ public class NetworkPlayer : Photon.PunBehaviour, IPunObservable
             {
                 if (scripts[i] is NetworkPlayer) continue;
                 else if (scripts[i] is PhotonView) continue;
+                else if (scripts[i] is AnimatorControler) continue;
 
                 scripts[i].enabled = false;
             }
-        }
-        
-        PhotonView pv = GetComponent<PhotonView>();
-        pv.ObservedComponents.Add(this);
+        }*/
     }
 
     void Update()
@@ -37,35 +35,24 @@ public class NetworkPlayer : Photon.PunBehaviour, IPunObservable
         localCam.enabled = this.Status;
     }
 
-    public bool setStatus(bool status = true)
+    public bool setStatus(bool status, int id)
     {
-        this.Status = status;
-        setCameraOn();
+        if (!this.Status && status)
+        {
+            this.Status = status;
+            setCameraOn(id);
+        }
         return status;
     }
 
-    public void setCameraOn()
+    public void setCameraOn(int id)
     {
         if (this.Status)
         {
             localCam.enabled = this.Status;
-            transform.position = new Vector3((float)-24.5, 4, (float)-0.5);
+            transform.position = new Vector3((float)-24.5 + (float)id, 4, (float)-0.5);
             transform.Rotate(0, -90, 0);
         }
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.isWriting)
-        {
-            stream.SendNext(this.Status);
-        }
-        else
-        {
-            this.Status = (bool)stream.ReceiveNext();
-            Debug.Log(this.Status);
-            setCameraOn();
-        }
-    }
-    
 }

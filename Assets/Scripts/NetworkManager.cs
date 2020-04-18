@@ -9,6 +9,7 @@ public class NetworkManager : Photon.PunBehaviour
     public Transform[] spawnPoints = new Transform[4];
     public Text NetStatus;
     public string playerPrefabName = "Player";
+    public GameObject NetManager;
 
     public const string Version = "1.101";
     public const string RoomName = "Multiplayer";
@@ -21,11 +22,13 @@ public class NetworkManager : Photon.PunBehaviour
         PhotonNetwork.ConnectUsingSettings(Version);
         playerID = PhotonNetwork.countOfPlayers;
         PhotonNetwork.automaticallySyncScene = true;
+        DontDestroyOnLoad(NetManager);
     }
 
     void Update()
     {
         NetStatus.text = "Player" + playerID + ": " + PhotonNetwork.connectionStateDetailed.ToString();
+        lobbyCam.enabled = true;
     }
 
     public override void OnConnectionFail(DisconnectCause cause)
@@ -58,18 +61,31 @@ public class NetworkManager : Photon.PunBehaviour
         print("Player DISconnected");
     }
     
-    
-
-
     public void LaunchLevel()
     {
-        NetworkPlayer NetPlayer = player.GetComponent<NetworkPlayer>(); 
-        bool res = NetPlayer.setStatus(true);
-        if (res && PhotonNetwork.isMasterClient)
+        photonView.RPC("PrepareLevel", PhotonTargets.All, true);
+
+        if (PhotonNetwork.isMasterClient)
         {
             PhotonNetwork.isMessageQueueRunning = false;
+            //new WaitForSeconds(1f);
             PhotonNetwork.LoadLevel("Test Multi");
         }
         PhotonNetwork.isMessageQueueRunning = true;
+    }
+
+    [PunRPC]
+    void PrepareLevel(bool state)
+    {
+        NetworkPlayer NetPlayer = player.GetComponent<NetworkPlayer>();
+        bool res = NetPlayer.setStatus(state, playerID);
+        
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var otherplayer in players)
+        {
+            DontDestroyOnLoad(otherplayer);
+            //otherplayer.gameObject.setActive = true;
+        }
+        
     }
 }

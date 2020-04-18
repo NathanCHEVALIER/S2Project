@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - PunSceneSettings
     Assembly-CSharp.dll:
     - AnimatorControler
     - ChangeSceneAfterDelayScript
@@ -1000,7 +998,7 @@ ScriptsOnlyBuild:
     className: OptionsSettings
   - hash:
       serializedVersion: 2
-      Hash: c563391de0693ae7df0fcd4f0c7f2014
+      Hash: 7a1960bd9305d82d3f2299996728ebcf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager
