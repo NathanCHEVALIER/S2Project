@@ -1066,6 +1066,16 @@ PrefabInstance:
       propertyPath: instantiationId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2997113530702305519, guid: dac931b803a81bd4d847e13fcb0823b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3309243256213208322, guid: dac931b803a81bd4d847e13fcb0823b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3344892376880669340, guid: dac931b803a81bd4d847e13fcb0823b1,
         type: 3}
       propertyPath: m_LocalPosition.x

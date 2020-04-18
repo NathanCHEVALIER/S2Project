@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,6 +43,7 @@ public class NetworkManager : Photon.PunBehaviour
     {
         playerID = PhotonNetwork.playerList.Length;
         lobbyCam.enabled = true;
+        DontDestroyOnLoad(lobbyCam);
         player = PhotonNetwork.Instantiate(playerPrefabName, spawnPoints[playerID - 1].position, spawnPoints[playerID - 1].rotation, 0);
         DontDestroyOnLoad(player);
     }
@@ -57,19 +57,19 @@ public class NetworkManager : Photon.PunBehaviour
     {
         print("Player DISconnected");
     }
+    
+    
+
 
     public void LaunchLevel()
     {
-        NetworkPlayer NetPlayer = player.GetComponent<NetworkPlayer>();
+        NetworkPlayer NetPlayer = player.GetComponent<NetworkPlayer>(); 
         bool res = NetPlayer.setStatus(true);
-        if (res)
+        if (res && PhotonNetwork.isMasterClient)
         {
-            if(PhotonNetwork.isMasterClient)
-            {
-                PhotonNetwork.LoadLevel("Test Multi");
-            }
-            lobbyCam.enabled = false;
-            player.transform.position = new Vector3((float)-24.5, 4, (float)-0.5);
+            PhotonNetwork.isMessageQueueRunning = false;
+            PhotonNetwork.LoadLevel("Test Multi");
         }
+        PhotonNetwork.isMessageQueueRunning = true;
     }
 }
