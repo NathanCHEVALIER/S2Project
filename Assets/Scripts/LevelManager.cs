@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ExitGames.Client.DemoParticle;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class LevelManager : MonoBehaviour
     private GameObject player;
     private NetworkPlayer NetPlayer;
     
-    public Text gameTimer;
-    public Text gameCountdown;
+    public TextMeshProUGUI gameTimer;
+    public TextMeshProUGUI gameCountdown;
     public GameObject FinishZone;
     
     // Start is called before the first frame update
