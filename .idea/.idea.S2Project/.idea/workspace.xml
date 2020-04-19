@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/arriere.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Unity Projects/PUN Test/Assets/Scripts/NetworkManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LunchPadPlateform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimatorControler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,10 +38,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMvmt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorControler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
       </list>
     </option>
   </component>
@@ -79,6 +80,7 @@
       <workItem from="1587213185511" duration="15521000" />
       <workItem from="1587243647008" duration="5995000" />
       <workItem from="1587286174628" duration="9427000" />
+      <workItem from="1587307501493" duration="4354000" />
     </task>
     <servers />
   </component>

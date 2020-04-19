@@ -12,13 +12,14 @@ public class LevelManager : MonoBehaviour
     private GameObject player;
     private NetworkPlayer NetPlayer;
     
-    public Text gameStatus;
+    public Text gameTimer;
+    public Text gameCountdown;
     public GameObject FinishZone;
     
     // Start is called before the first frame update
     void Start()
     {
-        gameStatus.text = "Prêt ?";
+        gameCountdown.text = "Prêt ?";
         player = GameObject.FindWithTag("MyPlayer");
         NetPlayer = player.GetComponent<NetworkPlayer>();
     }
@@ -27,26 +28,32 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         executionTime -= Time.deltaTime;
-        if (executionTime < -1.5f)
+        
+        if (executionTime < -1.5f && !running)
         {
-            if (running)
-            {
-                gameStatus.text = "" + (-1 * executionTime);
-            }
-            else
-            {
-                gameStatus.text = "Terminé en " + (-1 * playerTime);
-            }
+            gameCountdown.text = "Terminé !\n" + time2str(playerTime);
         }
         else if (executionTime <= 0)
         {
-            running = true;
-            NetPlayer.enableRunning();
-            gameStatus.text = "Partez !";
-        } 
+            if (!running)
+            {
+                running = true;
+                NetPlayer.enableRunning();
+            }
+
+            if (executionTime > -1.5f)
+            {
+                gameCountdown.text = "Partez !";
+            }
+            else
+            {
+                gameCountdown.text = "";
+            }
+            gameTimer.text = "" + time2str(executionTime);
+        }
         else if (executionTime < 4)
         {
-            gameStatus.text = "" + (int)executionTime;
+            gameCountdown.text = "" + (int)executionTime;
         }
     }
 
@@ -55,5 +62,13 @@ public class LevelManager : MonoBehaviour
         playerTime = executionTime;
         running = false;
         NetPlayer.enableRunning(running);
+    }
+
+    private string time2str(float time)
+    {
+        int decPart = (int) -time;
+        int floatPart = (int)(-time * 100f) % 100;
+
+        return decPart + ":" + floatPart;
     }
 }

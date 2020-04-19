@@ -54,7 +54,7 @@ public class NetworkPlayer : Photon.PunBehaviour
         if (this.Status)
         {
             localCam.enabled = this.Status;
-            transform.position = new Vector3((float)-25, 4, (float)(-2 + 2*id));
+            transform.position = new Vector3((float)-25, 4, (float)(-3 + 3*id));
             transform.Rotate(0, -90, 0);
         }
     }

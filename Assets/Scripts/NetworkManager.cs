@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NetworkManager : Photon.PunBehaviour
 {
@@ -10,21 +11,22 @@ public class NetworkManager : Photon.PunBehaviour
     public Text NetStatus;
     public string playerPrefabName = "Player";
     public GameObject NetManager;
+    public GameObject playerUI;
 
     public const string Version = "1.101";
     public const string RoomName = "Multiplayer";
 
     private int playerID;
     private GameObject player;
-
-    private GameObject playerUI;
-
+    
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings(Version);
         playerID = PhotonNetwork.countOfPlayers;
         PhotonNetwork.automaticallySyncScene = true;
         DontDestroyOnLoad(NetManager);
+        Transform button = playerUI.transform.Find("Button");
+        button.gameObject.SetActive(false);
     }
 
     void Update()
@@ -52,6 +54,11 @@ public class NetworkManager : Photon.PunBehaviour
         player = PhotonNetwork.Instantiate(playerPrefabName, spawnPoints[playerID - 1].position, spawnPoints[playerID - 1].rotation, 0);
         DontDestroyOnLoad(player);
         player.tag = "MyPlayer";
+        if (PhotonNetwork.isMasterClient)
+        {
+            Transform button = playerUI.transform.Find("Button");
+            button.gameObject.SetActive(true);
+        }
     }
     
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
@@ -61,7 +68,7 @@ public class NetworkManager : Photon.PunBehaviour
     
     public override void OnPhotonPlayerDisconnected(PhotonPlayer otherPlayer)
     {
-        print("Player DISconnected");
+        print("Player Disconnected");
     }
     
     public void PreLoadLevel()
@@ -88,5 +95,10 @@ public class NetworkManager : Photon.PunBehaviour
         {
             DontDestroyOnLoad(otherplayer);
         }
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Main menu");
     }
 }
