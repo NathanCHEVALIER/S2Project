@@ -126,6 +126,7 @@
           <e p="Delete.cs" t="Include" />
           <e p="GoodPlateforme.cs" t="Include" />
           <e p="GoToLevel.cs" t="Include" />
+          <e p="LevelEnd.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="LunchPadPlateform.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />

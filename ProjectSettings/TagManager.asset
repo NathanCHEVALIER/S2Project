@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerUI
   - MyPlayer
+  - LevelManager
   layers:
   - Default
   - TransparentFX

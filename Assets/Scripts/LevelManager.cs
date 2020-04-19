@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     private float executionTime = 7.0f;
+    private float playerTime;
     private bool running = false;
     private GameObject player;
     private NetworkPlayer NetPlayer;
     
     public Text gameStatus;
+    public GameObject FinishZone;
     
     // Start is called before the first frame update
     void Start()
@@ -25,19 +27,33 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         executionTime -= Time.deltaTime;
-        if (executionTime < 0)
+        if (executionTime < -1.5f)
         {
-            gameStatus.text = "Run & Win !";
-            if (!running)
+            if (running)
             {
-                running = true;
-                NetPlayer.enableRunning();
+                gameStatus.text = "" + (-1 * executionTime);
             }
+            else
+            {
+                gameStatus.text = "Terminé en " + (-1 * playerTime);
+            }
+        }
+        else if (executionTime <= 0)
+        {
+            running = true;
+            NetPlayer.enableRunning();
+            gameStatus.text = "Partez !";
         } 
         else if (executionTime < 4)
         {
-            gameStatus.text = "Run in " + (int)executionTime;
+            gameStatus.text = "" + (int)executionTime;
         }
-        
+    }
+
+    public void FinishLevel()
+    {
+        playerTime = executionTime;
+        running = false;
+        NetPlayer.enableRunning(running);
     }
 }

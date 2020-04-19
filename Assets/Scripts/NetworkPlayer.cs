@@ -54,19 +54,19 @@ public class NetworkPlayer : Photon.PunBehaviour
         if (this.Status)
         {
             localCam.enabled = this.Status;
-            transform.position = new Vector3((float)-24.5 + (float)id, 4, (float)-0.5);
+            transform.position = new Vector3((float)-25, 4, (float)(-2 + 2*id));
             transform.Rotate(0, -90, 0);
         }
     }
 
-    public void enableRunning()
+    public void enableRunning(bool run = true)
     {
-        IsRunning = true;
+        IsRunning = run;
         UnityEngine.MonoBehaviour[] scripts = GetComponents<UnityEngine.MonoBehaviour>();
         
         for (int i = 0; i < scripts.Length; i++)
         {
-            if (IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = true;
+            if (scripts[i] is PlayerMvmt) scripts[i].enabled = IsRunning;
         }
     }
 }
