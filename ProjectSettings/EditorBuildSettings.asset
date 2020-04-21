@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LVL1.unity
     guid: 5d0d162108c06d94fb5682f006bfa728
+  - enabled: 1
+    path: Assets/Scenes/Test Multi.unity
+    guid: b4470f5a30aba47409e67f4e1423b428
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 46671e12ae7e7044ca2efa760cf5bd92
   m_configObjects: {}
