@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>ColorDimensionWebsite</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+	</head>
+	
+	<body>
+		<div class="centre">
+			<button class="bouton1"><a href="But du jeu" target="_blank">BUT DU JEU</a> </button>
+			<button class="bouton2"><a href="Personnages" target="_blank">DECORS... NIVEAUX... ET... ENNEMIS</a> </button>
+			<button class="bouton3"><a href="Informations" target="_blank">ACTUALITE ET INFORMA - TIONS</a> </button>
+		</div>
+		<footer>
+			
+			<p>CHEVALIER Nathan, MARMOT Mélinda, TOULOUSE Emil, TRAORE Nandi</p>
+			
+		</footer>
+	</body>
+	
+</html>

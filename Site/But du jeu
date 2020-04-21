@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>But du jeu</title>
+		<link rel="stylesheet" type="text/css" href="style2.css" />
+		
+	</head>
+	
+	<body>
+	
+		<header>
+			<h1>ColorDimension by MixITeam</br></h1>
+		</header>
+		
+		<nav>
+			<p>Le projet Color Dimension est un jeu de plateforme 
+			comprenant deux à quatre dimensions. En plus des trois 
+			dimensions usuelles, la quatrième dimension est celle 
+			des couleurs, c’est à dire que certaines plateformes 
+			ne sont accessibles que lorsque le personnage est dans
+			la même couleur que cette dernière.</p>
+		
+			<img src="images/logo.png" alt="texte" />
+		
+			<p>Le projet est réalisé avec 4 membres dans notre groupe. 
+			Il sera effectué en <a href="https://fr.wikipedia.org/wiki/C_sharp">
+			C#</a> et avec <a href="https://unity.com/fr">
+			Unity</a>.</p>
+		
+			<p>Deux présentations orales avec un support numérique seront
+			faites durant l'avancement du projet et une soutenance finale
+			sera effectuée en fin de projet.</p>
+		</nav>
+		
+		<section>
+			<table>
+				<tr>
+			
+					<td><h2>But du jeu</h2></td>
+			
+				</tr>
+				<tr>
+		
+					<td><p>Comme dit précédemment, il s’agit d’un jeu de plateforme.</br>
+					Celui-ci met en scène une licorne dont la corne peut changer
+					de couleur (nous verrons ci-dessous plus en détail comment ce
+					changement de couleur peut influer sur le jeu).</br>
+					Le but du jeu est d’éviter tous les obstacles et/ou d’éliminer
+					tous les ennemis présents dans le niveau afin de pouvoir accéder
+					à la ligne d’arrivée.</br> Niveau après niveau, le joueur marquera un
+					maximum de points et essayera d’aller le plus loin possible.</br>
+					Sauter, courir et changer de couleur sont les seuls mécanismes
+					de gameplay de « Color Dimension ».</p></td>
+		
+					<td><img src="images/jeu.png" alt="texte" /></td>
+				
+				</tr>				
+			</table>
+			
+			<h2>Planning</h2>
+			
+			<table border="3">
+				<tr>
+					<td bgcolor="0000FF">Tâche à effectuer</td>
+					<td bgcolor="grey">Soutenance 1</td>
+					<td bgcolor="grey">Soutenance 2</td>
+					<td bgcolor="grey">Soutenance 3</td>
+				</tr>
+				<tr>
+					<td>Base du jeu : déplacer le personnage</td>
+					<td><div class="vert">100%</div></td>
+					<td><div class="vert">100%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+				<tr>
+					<td>Gestion multijoueur</td>
+					<td><div class="vert">50%</div></td>
+					<td><div class="vert">75%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+				<tr>
+					<td>Gestion des plateformes</td>
+					<td><div class="vert">75%</div></td>
+					<td><div class="vert">90%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+				<tr>
+					<td>Ennemis et obstacles</td>
+					<td>0%</td>
+					<td><div class="vert">50%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+				<tr>
+					<td>Graphismes 3D et animations</td>
+					<td>0%</td>
+					<td><div class="vert">30%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+				<tr>
+					<td>Graphismes 2D et son</td>
+					<td>0%</td>
+					<td><div class="vert">30%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+				<tr>
+					<td>Site web et documentation</td>
+					<td><div class="vert">20%</div></td>
+					<td><div class="vert">60%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+				<tr>
+					<td>Level design, menus</td>
+					<td>0%</td>
+					<td><div class="vert">50%</div></td>
+					<td bgcolor="red"></td>
+				</tr>
+			</table>
+			</br>
+		</section>
+		
+		<footer>
+			
+			<p>CHEVALIER Nathan, MARMOT Mélinda, TOULOUSE Emil, TRAORE Nandi</p>
+			
+		</footer>
+		
+	</body>
+</html>

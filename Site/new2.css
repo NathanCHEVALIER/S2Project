@@ -1,0 +1,79 @@
+body {
+	background-image: url(images/image_de_fond.png);
+}
+
+div.centre {
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border: 5px solid #333;
+	background-image: url(images/image_centrale.png);
+	background-color: #000000;
+}
+
+footer {
+	color: white;
+	background-color: #00008B;
+	border-radius: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 415px;
+	font-weight: bold;
+}
+
+.centre .bouton1 {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.centre .bouton1:hover {
+  background-color: blue;
+}
+
+.centre .bouton2 {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.centre .bouton2:hover {
+  background-color: blue;
+}
+
+.centre .bouton3 {
+  position: absolute;
+  top: 63%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.centre .bouton3:hover {
+  background-color: blue;
+}
