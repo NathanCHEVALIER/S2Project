@@ -23,7 +23,7 @@ public class NetworkPlayer : Photon.PunBehaviour
             {
                 if (scripts[i] is PlayerMvmt) scripts[i].enabled = false;
                 else if (scripts[i] is AnimatorControler) scripts[i].enabled = false;
-                else if (!IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = false;
+                //else if (!IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = false;
             }
         }
         else
