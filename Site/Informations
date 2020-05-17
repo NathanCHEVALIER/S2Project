@@ -7,4 +7,49 @@
 		
 	</head>
 	
+	<body>
+	
+		<header>
+			<h1>Actualité et informations</br></h1>
+		</header>
+		
+		<nav>
+			<p>Ce projet est effectué par quatre élèves d'EPITA,</br> tous en B1:</p>
+			<img src="images/Nathan.png" alt="texte" />
+			<p>Nathan CHEVALIER, notre chef de projet.</p>
+			<img src="images/Mélinda.png" alt="texte" />
+			<p>Mélinda MARMOT</p>
+			<img src="images/Nandi.png" alt="texte" />
+			<p>Nandi TRAORE</p>
+			<img src="images/Emil.png" alt="texte" />
+			<p>Emil TOULOUSE</p>
+		</nav>
+		
+		<section>
+			<table>
+				<tr>
+			
+					<td><h2>Soutenance finale</h2></td>
+			
+				</tr>
+				<tr>
+		
+					<td><p>En vue de la troisième et dernière soutenance, 
+					nous présentons à partir</br>de ce jour un projet terminé
+					à notre jury M.Christophe Boullay.</br>
+					Ce jeu n'attend qu'une chose : d'être testé par une 
+					multitude de joueur.</br>Voici une petite approche de 
+					ce que vous découvrirez si vous voulez y jouer.</td>
+		
+					<td><video controls width="600">
+					<source src="vidéos/MixITeam.mp4" type="video/mp4">
+					</video></td>
+				
+				</tr>				
+			</table>
+		</section>
+		
+		
+	</body>
+	
 </html>
