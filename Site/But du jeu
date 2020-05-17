@@ -71,49 +71,49 @@
 					<td>Base du jeu : déplacer le personnage</td>
 					<td><div class="vert">100%</div></td>
 					<td><div class="vert">100%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 				<tr>
 					<td>Gestion multijoueur</td>
 					<td><div class="vert">50%</div></td>
 					<td><div class="vert">75%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 				<tr>
 					<td>Gestion des plateformes</td>
 					<td><div class="vert">75%</div></td>
 					<td><div class="vert">90%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 				<tr>
 					<td>Ennemis et obstacles</td>
 					<td>0%</td>
 					<td><div class="vert">50%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 				<tr>
 					<td>Graphismes 3D et animations</td>
 					<td>0%</td>
 					<td><div class="vert">30%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 				<tr>
 					<td>Graphismes 2D et son</td>
 					<td>0%</td>
 					<td><div class="vert">30%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 				<tr>
 					<td>Site web et documentation</td>
 					<td><div class="vert">20%</div></td>
 					<td><div class="vert">60%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 				<tr>
 					<td>Level design, menus</td>
 					<td>0%</td>
 					<td><div class="vert">50%</div></td>
-					<td bgcolor="red"></td>
+					<td><div class="vert">100%</div></td>
 				</tr>
 			</table>
 			</br>
