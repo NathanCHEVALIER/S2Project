@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class NetworkManager : Photon.PunBehaviour
 {
     public Camera lobbyCam;
     public Transform[] spawnPoints = new Transform[4];
-    public Text NetStatus;
+    public TextMeshProUGUI NetStatus;
     public string playerPrefabName = "Player";
     public GameObject NetManager;
     public GameObject playerUI;
@@ -25,7 +26,7 @@ public class NetworkManager : Photon.PunBehaviour
         playerID = PhotonNetwork.countOfPlayers;
         PhotonNetwork.automaticallySyncScene = true;
         DontDestroyOnLoad(NetManager);
-        Transform button = playerUI.transform.Find("Button");
+        Transform button = playerUI.transform.Find("PlayButton");
         button.gameObject.SetActive(false);
     }
 
@@ -56,7 +57,7 @@ public class NetworkManager : Photon.PunBehaviour
         player.tag = "MyPlayer";
         if (PhotonNetwork.isMasterClient)
         {
-            Transform button = playerUI.transform.Find("Button");
+            Transform button = playerUI.transform.Find("PlayButton");
             button.gameObject.SetActive(true);
         }
     }

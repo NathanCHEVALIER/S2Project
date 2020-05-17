@@ -447,7 +447,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12296}
     - Class: 114
+      Script: {instanceID: 12542}
+    - Class: 114
+      Script: {instanceID: 12766}
+    - Class: 114
       Script: {instanceID: 12834}
+    - Class: 114
+      Script: {instanceID: 13130}
     - Class: 114
       Script: {instanceID: 13178}
     - Class: 114
@@ -574,8 +580,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11206}
-    - Class: 114
-      Script: {instanceID: 11394}
     - Class: 114
       Script: {instanceID: 11440}
     - Class: 114
@@ -1011,7 +1015,7 @@ ScriptsOnlyBuild:
     className: OptionsSettings
   - hash:
       serializedVersion: 2
-      Hash: 1c54e34e4cf14541ae6230790aca9861
+      Hash: 8aa2dfe020f705e95ac46ff5e69c6564
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager
@@ -1269,7 +1273,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 8c19c9e2254aed5ad0b115f5a3ba3d9a
+      Hash: 668acda4537f5cfcc5fa4e78ff8ea0ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelManager
