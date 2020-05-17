@@ -11,4 +11,8 @@ public class GoToLevel : MonoBehaviour
     {
         SceneManager.LoadScene(level + BaseLevel);
     }
+    public void BackMenu()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
