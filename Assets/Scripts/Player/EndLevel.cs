@@ -8,22 +8,34 @@ public class EndLevel : MonoBehaviour
 {
     public int next_level_index;
     public int menu_indexs;
+    public GameObject end_canvas;
+
     private void Awake()
     {
         next_level_index = SceneManager.GetActiveScene().buildIndex + 1;
-        menu_indexs = 2;
+        menu_indexs = 4;
     }
-    
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.name == "Finish")
         {
+            Time.timeScale = 0f;
             if(next_level_index-menu_indexs > PlayerPrefs.GetInt("levelReached"))
             {
                 PlayerPrefs.SetInt("levelReached", next_level_index - menu_indexs);                
             }
-            SceneManager.LoadScene(next_level_index);
-
+            end_canvas.SetActive(true);
+            
         }
+    }
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(GetComponent<EndLevel>().next_level_index);
+        Time.timeScale = 1f;
+    }
+    public void Resume()
+    {
+        Time.timeScale = 1f;
     }
 }
