@@ -97,6 +97,18 @@ public class NetworkManager : Photon.PunBehaviour
             DontDestroyOnLoad(otherplayer);
         }
     }
+    
+    [PunRPC]
+    void PlayerFinished(int id, float time)
+    {
+        LevelManager LvlManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        LvlManager.PlayerFinished(id, time);
+    }
+
+    public void sendScore(int id, float time)
+    {
+        photonView.RPC("PlayerFinished", PhotonTargets.All, id, time);
+    }
 
     public void BackToMenu()
     {

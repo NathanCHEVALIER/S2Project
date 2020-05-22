@@ -11,6 +11,8 @@ public class NetworkPlayer : Photon.PunBehaviour
 
     private bool Status = false;
     private bool IsRunning = false;
+
+    private int playerID;
     
     void Start()
     {
@@ -42,6 +44,7 @@ public class NetworkPlayer : Photon.PunBehaviour
 
     public void setStatus(bool status, int id)
     {
+        playerID = id;
         if (!this.Status && status)
         {
             this.Status = status;
@@ -68,5 +71,10 @@ public class NetworkPlayer : Photon.PunBehaviour
         {
             if (scripts[i] is PlayerMvmt) scripts[i].enabled = IsRunning;
         }
+    }
+
+    public int getID()
+    {
+        return playerID;
     }
 }

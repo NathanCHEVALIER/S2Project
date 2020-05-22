@@ -40,4 +40,6 @@ MonoBehaviour:
   - UpSta
   - PrepareLevel
   - setIndestructable
+  - IhaveFinished
+  - PlayerFinished
   DisableAutoOpenWizard: 1

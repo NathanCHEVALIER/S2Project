@@ -40,9 +40,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMvmt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorControler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +87,8 @@
       <workItem from="1587509002332" duration="1161000" />
       <workItem from="1587576738266" duration="652000" />
       <workItem from="1587635016472" duration="1787000" />
+      <workItem from="1590072835780" duration="5501000" />
+      <workItem from="1590100921852" duration="2013000" />
     </task>
     <servers />
   </component>
