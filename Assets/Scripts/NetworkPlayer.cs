@@ -24,7 +24,8 @@ public class NetworkPlayer : Photon.PunBehaviour
             for (int i = 0; i < scripts.Length; i++)
             {
                 if (scripts[i] is PlayerMvmt) scripts[i].enabled = false;
-                else if (scripts[i] is AnimatorControler) scripts[i].enabled = false;
+                if (scripts[i] is AnimatorControler) scripts[i].enabled = false;
+                if (scripts[i] is EndLevel) scripts[i].enabled = false;
                 //else if (!IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = false;
             }
         }
@@ -33,6 +34,7 @@ public class NetworkPlayer : Photon.PunBehaviour
             for (int i = 0; i < scripts.Length; i++)
             {
                 if (!IsRunning && scripts[i] is PlayerMvmt) scripts[i].enabled = false;
+                if (scripts[i] is EndLevel) scripts[i].enabled = false;
             }
         }
     }

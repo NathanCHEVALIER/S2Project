@@ -21,6 +21,8 @@
       <Path>Graphismes</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>Site</Path>
+      <Path>Temp</Path>
       <Path>UIElementsSchema</Path>
       <Path>obj</Path>
     </explicitExcludes>
