@@ -15,4 +15,8 @@ public class GoToLevel : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void BackLevels()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
