@@ -13,7 +13,7 @@ public class EndLevel : MonoBehaviour
     private void Awake()
     {
         next_level_index = SceneManager.GetActiveScene().buildIndex + 1;
-        menu_indexs = 4;
+        menu_indexs = 3;
     }
 
     private void OnCollisionEnter(Collision collision)

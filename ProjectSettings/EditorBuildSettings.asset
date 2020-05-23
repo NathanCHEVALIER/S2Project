@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelector.unity
     guid: f4e3b1e708d98cb4cb23edaec4716b7b
   - enabled: 1
-    path: Assets/Scenes/End_Level.unity
-    guid: 9af523fbf24784347ba9c1c7db4f00a6
-  - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: 46671e12ae7e7044ca2efa760cf5bd92
+  - enabled: 1
+    path: Assets/Scenes/LVL0.unity
+    guid: 121fdee7469786946b9ed098af9464cd
   - enabled: 1
     path: Assets/Scenes/LVL1.unity
     guid: 5d0d162108c06d94fb5682f006bfa728
@@ -28,6 +28,9 @@ EditorBuildSettings:
     guid: 61ab8ba397e8245118fdeaaf06be6ac9
   - enabled: 1
     path: Assets/Scenes/LVL3.unity
+    guid: 4f2b3c61652585248b5280f93b7129a6
+  - enabled: 1
+    path: Assets/Scenes/LVL4.unity
     guid: cf55c964e437b4c6daf005023027d212
   - enabled: 1
     path: Assets/Scenes/Test Multi.unity
