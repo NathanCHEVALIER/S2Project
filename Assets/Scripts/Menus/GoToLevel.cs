@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GoToLevel : MonoBehaviour
 {
-    public int BaseLevel = 4;
+    public int BaseLevel = 3;
 
     public void LoadLevel(int level)
     {
@@ -13,10 +13,10 @@ public class GoToLevel : MonoBehaviour
     }    
     public void BackMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Main menu");
     }
     public void BackLevels()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("LevelSelector");
     }
 }
