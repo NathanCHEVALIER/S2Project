@@ -8,6 +8,14 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ColorSkies" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="LookCamera.cs" t="Include" />
+              <e p="SkyboxChanger.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Photon Unity Networking" t="Include">
           <e p="changelog.txt" t="Include" />
           <e p="Editor" t="Include">
@@ -130,6 +138,7 @@
           </e>
           <e p="NetworkManager.cs" t="Include" />
           <e p="NetworkPlayer.cs" t="Include" />
+          <e p="OnCollisionSound.cs" t="Include" />
           <e p="Plateformes" t="Include">
             <e p="arriere.cs" t="Include" />
             <e p="ChangeColor.cs" t="Include" />
