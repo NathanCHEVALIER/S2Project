@@ -45,6 +45,12 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("Main menu");
     }
 
+    public void QuitMulti()
+    {
+        NetworkManager NetManager = GameObject.Find("NetworkManager").GetComponent<NetworkManager>();
+        NetManager.BackToMenu();
+    }
+    
     public void QuitGame()
     {
         Application.Quit();
