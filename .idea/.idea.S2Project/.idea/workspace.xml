@@ -31,9 +31,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMvmt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorControler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menus/PauseMenu.cs" />
       </list>
     </option>
   </component>

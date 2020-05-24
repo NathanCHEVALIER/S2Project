@@ -48,6 +48,7 @@ public class PauseMenu : MonoBehaviour
     public void QuitMulti()
     {
         NetworkManager NetManager = GameObject.Find("NetworkManager").GetComponent<NetworkManager>();
+        Time.timeScale = 1f;
         NetManager.BackToMenu();
     }
     
