@@ -113,9 +113,9 @@ public class NetworkManager : Photon.PunBehaviour
     public void BackToMenu()
     {
         PhotonNetwork.Disconnect();
-        SceneManager.LoadScene("Main menu");
         Destroy(lobbyCam);
         Destroy(player);
         Destroy(NetManager);
+        SceneManager.LoadScene("Main menu");
     }
 }
