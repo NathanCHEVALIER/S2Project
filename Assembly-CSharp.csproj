@@ -124,6 +124,7 @@
      <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\OptionsSettings.cs" />
      <Compile Include="Assets\Scripts\Menus\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Multi\MultiToMenu.cs" />
      <Compile Include="Assets\Scripts\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\NetworkPlayer.cs" />
      <Compile Include="Assets\Scripts\OnCollisionSound.cs" />

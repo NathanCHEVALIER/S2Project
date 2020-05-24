@@ -136,6 +136,9 @@
             <e p="OptionsSettings.cs" t="Include" />
             <e p="PauseMenu.cs" t="Include" />
           </e>
+          <e p="Multi" t="Include">
+            <e p="MultiToMenu.cs" t="Include" />
+          </e>
           <e p="NetworkManager.cs" t="Include" />
           <e p="NetworkPlayer.cs" t="Include" />
           <e p="OnCollisionSound.cs" t="Include" />
