@@ -13,13 +13,13 @@ public class ChangeColor : MonoBehaviour
 		if (Input.GetMouseButtonDown(0))
 		{
 			if(num == 0)
-				gameObject.GetComponent<SkinnedMeshRenderer>().material = material[material.length - 1];
+				gameObject.GetComponent<SkinnedMeshRenderer>().material = material[material.Length - 1];
 			gameObject.GetComponent<SkinnedMeshRenderer>().material = material[num - 1];
 			num -= 1;
 		}
 		if (Input.GetMouseButtonDown(1))
 		{
-			if(num == material.length - 1)
+			if(num == material.Length - 1)
 				gameObject.GetComponent<SkinnedMeshRenderer>().material = material[0];
 			gameObject.GetComponent<SkinnedMeshRenderer>().material = material[num + 1];
 			num += 1;

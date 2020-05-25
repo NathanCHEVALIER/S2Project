@@ -7228,7 +7228,7 @@ GameObject:
   - component: {fileID: 869075447}
   - component: {fileID: 869075446}
   m_Layer: 0
-  m_Name: Color_plateform (1)
+  m_Name: Color_plateform_blue (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9363,8 +9363,8 @@ Transform:
   - {fileID: 1512486600}
   - {fileID: 1435772234}
   - {fileID: 102163644}
-  - {fileID: 91868324}
   - {fileID: 1856327584}
+  - {fileID: 91868324}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10906,7 +10906,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8dab81df869696e42a65a75a7e53f6b2, type: 2}
   - {fileID: 2100000, guid: 34436a7d3ed5015409e9afc2024d46cc, type: 2}
   num: 0
-  number: 0
 --- !u!1001 &1211826201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12474,7 +12473,7 @@ GameObject:
   - component: {fileID: 1345396271}
   - component: {fileID: 1345396270}
   m_Layer: 0
-  m_Name: Color_plateform
+  m_Name: Color_plateform_blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16038,7 +16037,7 @@ GameObject:
   - component: {fileID: 1688753399}
   - component: {fileID: 1688753398}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Color_Plateform_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
