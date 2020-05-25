@@ -7,28 +7,22 @@ using Random = UnityEngine.Random;
 public class ChangeColor : MonoBehaviour
 {
 	public Material[] material = new Material[7];
-	public int num;
-	public int number;
+	public int num = 0;
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(2))
+		if (Input.GetMouseButtonDown(0))
 		{
-			number = Random.Range(0, material.Length);
-			gameObject.GetComponent<Renderer>().material = material[number];
-			if (gameObject.GetComponent<Renderer>().material == material[0])
-				num = 0;
-			if (gameObject.GetComponent<Renderer>().material == material[1])
-				num = 1;
-			if (gameObject.GetComponent<Renderer>().material == material[2])
-				num = 2;
-			if (gameObject.GetComponent<Renderer>().material == material[3])
-				num = 3;
-			if (gameObject.GetComponent<Renderer>().material == material[4])
-				num = 4;
-			if (gameObject.GetComponent<Renderer>().material == material[5])
-				num = 5;
-			if (gameObject.GetComponent<Renderer>().material == material[6])
-				num = 6;
+			if(num == 0)
+				gameObject.GetComponent<SkinnedMeshRenderer>().material = material[material.length - 1];
+			gameObject.GetComponent<SkinnedMeshRenderer>().material = material[num - 1];
+			num -= 1;
+		}
+		if (Input.GetMouseButtonDown(1))
+		{
+			if(num == material.length - 1)
+				gameObject.GetComponent<SkinnedMeshRenderer>().material = material[0];
+			gameObject.GetComponent<SkinnedMeshRenderer>().material = material[num + 1];
+			num += 1;
 		}
 	}
 }
