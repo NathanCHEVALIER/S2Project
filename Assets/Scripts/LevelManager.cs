@@ -17,6 +17,9 @@ public class LevelManager : MonoBehaviour
     public TextMeshProUGUI gameCountdown;
     public TextMeshProUGUI playerName;
     public TextMeshProUGUI ScoresUI;
+    public TextMeshProUGUI TimesUI;
+    public Transform BackButton;
+    public Image backScore;
     public GameObject FinishZone;
 
     private int playerID;
@@ -34,6 +37,9 @@ public class LevelManager : MonoBehaviour
         playersTime = new float[4];
         playerName.text = "Player " + playerID;
         ScoresUI.text = "";
+        TimesUI.text = "";
+        BackButton.gameObject.SetActive(false);
+        backScore.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -115,11 +121,16 @@ public class LevelManager : MonoBehaviour
     public void displayScore()
     {
         string texte = "";
+        string times = "";
         for (int i = 0; i < PhotonNetwork.playerList.Length; i++)
         {
-            texte = texte + "Player " + (i+1) + ": " + time2str(playersTime[i]) + "\n";
+            texte = texte + "Player " + (i+1) + "\n";
+            times = times + time2str(playersTime[i]) + "\n";
         }
         
+        TimesUI.text = times;
         ScoresUI.text = texte;
+        BackButton.gameObject.SetActive(true);
+        backScore.gameObject.SetActive(true);
     }
 }

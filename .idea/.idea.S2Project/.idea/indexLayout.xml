@@ -18,6 +18,7 @@
       <Path>.idea</Path>
       <Path>.vs</Path>
       <Path>Builds</Path>
+      <Path>Checkpoint</Path>
       <Path>Graphismes</Path>
       <Path>Library</Path>
       <Path>Logs</Path>

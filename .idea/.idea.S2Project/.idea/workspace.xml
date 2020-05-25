@@ -33,11 +33,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMvmt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorControler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menus/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multi/MultiToMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +87,7 @@
       <workItem from="1590184295878" duration="914000" />
       <workItem from="1590241219905" duration="317000" />
       <workItem from="1590323005491" duration="796000" />
+      <workItem from="1590415062095" duration="927000" />
     </task>
     <servers />
   </component>
