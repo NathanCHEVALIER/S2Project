@@ -5,49 +5,70 @@ using UnityEngine;
 
 public class GoodPlateforme : MonoBehaviour
 {
-	public GameObject target1;
-	Color c;
+	public GameObject Cube;
 	public int num;
-	int number;
-	
-	void Start()
+	public int number;
+
+	void Update()
 	{
-		num = target1.GetComponent<ChangeColor>().num;
-		if (gameObject.GetComponent<SkinnedMeshRenderer>().material.color == Color.blue)
-			number = 0;
-		if (gameObject.GetComponent<SkinnedMeshRenderer>().material.color == Color.cyan)
+		num = Cube.GetComponent<ChangeColor>().num;
+		if (gameObject.GetComponent<Renderer>().material.color == Color.blue)
+		{
 			number = 1;
-		if (gameObject.GetComponent<SkinnedMeshRenderer>().material.color == Color.green)
+		}
+		if (gameObject.GetComponent<Renderer>().material.color == Color.cyan)
+		{
 			number = 2;
-		if (gameObject.GetComponent<SkinnedMeshRenderer>().material.color == Color.HSVToRGB(Convert.ToSingle(255),Convert.ToSingle(167), Convert.ToSingle(0)))
+		}
+
+		if (gameObject.GetComponent<Renderer>().material.color == Color.green)
+		{
 			number = 3;
-		if (gameObject.GetComponent<SkinnedMeshRenderer>().material.color == Color.red)
+		}
+
+		if (gameObject.GetComponent<Renderer>().material.color == Color.HSVToRGB(Convert.ToSingle(255), Convert.ToSingle(167), Convert.ToSingle(0)))
+		{
 			number = 4;
-		if (gameObject.GetComponent<SkinnedMeshRenderer>().material.color == Color.white)
+		}
+		if (gameObject.GetComponent<Renderer>().material.color == Color.red)
+		{
 			number = 5;
-		if (gameObject.GetComponent<SkinnedMeshRenderer>().material.color == Color.yellow)
+		}
+		if (gameObject.GetComponent<Renderer>().material.color == Color.white)
+		{
 			number = 6;
+		}
+		if (gameObject.GetComponent<Renderer>().material.color == Color.yellow)
+		{
+			number = 7;
+		}
 	}
+		
 
 	private void OnCollisionEnter(Collision other)
 	{
 		if (num == number)
 		{
 			gameObject.GetComponent<Collider>().isTrigger = false;
+			
 		}
 		else
 		{
 			gameObject.GetComponent<Collider>().isTrigger = true;
+			
 		}
+		
 	}
 
 	private void OnCollisionStay(Collision other)
 	{
-		target1.GetComponent<ChangeColor>().enabled = false;
+		Cube.GetComponent<ChangeColor>().enabled = false;
 	}
 	
-	private void OnCollisionExit(Collision other)
+	private IEnumerator OnCollisionExit(Collision other)
 	{
-		target1.GetComponent<ChangeColor>().enabled = true;
+		Cube.GetComponent<ChangeColor>().enabled = true;
+		yield return new WaitForSeconds(2);
+		gameObject.GetComponent<Collider>().isTrigger = false;
 	}
 }
