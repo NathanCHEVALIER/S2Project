@@ -5457,7 +5457,7 @@ PrefabInstance:
     - target: {fileID: 1509784348038160553, guid: f6fe2707e2a624dfd96c77e155556208,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.44
+      value: -19.52
       objectReference: {fileID: 0}
     - target: {fileID: 1509784348038160553, guid: f6fe2707e2a624dfd96c77e155556208,
         type: 3}
@@ -5518,7 +5518,7 @@ PrefabInstance:
         type: 3}
       propertyPath: end_canvas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 248880645}
     - target: {fileID: 5011424042506825779, guid: f6fe2707e2a624dfd96c77e155556208,
         type: 3}
       propertyPath: m_Materials.Array.size
