@@ -2832,12 +2832,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 883a1eb7447ccc648af8af476c73cd9f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06db9a7ddd8a5704684a6469cf4d5140, type: 3}
---- !u!4 &488461482 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 97063999496086034, guid: c71904132e8a6433b96542af2f5c7b63,
-    type: 3}
-  m_PrefabInstance: {fileID: 97063999176980152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &495278524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9868,7 +9862,7 @@ PrefabInstance:
         type: 3}
       propertyPath: end_canvas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1391212340}
     - target: {fileID: 5011424042506825779, guid: f6fe2707e2a624dfd96c77e155556208,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -10324,7 +10318,7 @@ Transform:
   - {fileID: 1516037426}
   - {fileID: 1457277145}
   - {fileID: 1257465290}
-  - {fileID: 488461482}
+  - {fileID: 97063999176980153}
   - {fileID: 1830261687}
   - {fileID: 1719811848}
   - {fileID: 1968450300}
@@ -11639,6 +11633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71904132e8a6433b96542af2f5c7b63, type: 3}
+--- !u!4 &97063999176980153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 97063999176980152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3932398386304863865
 PrefabInstance:
   m_ObjectHideFlags: 0
