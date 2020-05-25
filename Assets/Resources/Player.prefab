@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 5912903893542459070}
   - component: {fileID: 6230152936583443283}
   - component: {fileID: 3443698678909078470}
+  - component: {fileID: 2703025186657458018}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -434,6 +435,28 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
+--- !u!114 &2703025186657458018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497401047733277370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16654c912d03cd347ab6188f3f9f94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  num: 0
+  number: 0
 --- !u!1 &2564916891017965539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1145,6 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: e25fb47159d0eca44b4204ab20f30b48, type: 2}
-  - {fileID: 2100000, guid: 0f99151ac10e40e49806cc5f86670d60, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

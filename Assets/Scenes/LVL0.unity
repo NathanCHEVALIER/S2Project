@@ -5331,6 +5331,11 @@ PrefabInstance:
       propertyPath: end_canvas
       value: 
       objectReference: {fileID: 1277111665}
+    - target: {fileID: 5011424042506825779, guid: f6fe2707e2a624dfd96c77e155556208,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7819336481109653402, guid: f6fe2707e2a624dfd96c77e155556208,
         type: 3}
       propertyPath: viewIdField
@@ -5341,7 +5346,8 @@ PrefabInstance:
       propertyPath: instantiationId
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5131474847141585936, guid: f6fe2707e2a624dfd96c77e155556208, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f6fe2707e2a624dfd96c77e155556208, type: 3}
 --- !u!1001 &607847687
 PrefabInstance:
@@ -11039,6 +11045,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1189760716}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1195907598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8300412638788917642, guid: f6fe2707e2a624dfd96c77e155556208,
+    type: 3}
+  m_PrefabInstance: {fileID: 588191890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1195907601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195907598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16654c912d03cd347ab6188f3f9f94e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material:
+  - {fileID: 2100000, guid: e25fb47159d0eca44b4204ab20f30b48, type: 2}
+  - {fileID: 2100000, guid: 0f99151ac10e40e49806cc5f86670d60, type: 2}
+  - {fileID: 2100000, guid: fcf048bc2590d304cbc29d5530e72900, type: 2}
+  - {fileID: 2100000, guid: e1061c5e4fdef8647b18434bb3059fd7, type: 2}
+  - {fileID: 2100000, guid: 3c55ae4fdca03fe42a7b38e4816afeff, type: 2}
+  - {fileID: 2100000, guid: 75a3971ab897b5b498c2e2f26e53f3a2, type: 2}
+  - {fileID: 2100000, guid: 8dab81df869696e42a65a75a7e53f6b2, type: 2}
+  - {fileID: 2100000, guid: 34436a7d3ed5015409e9afc2024d46cc, type: 2}
+  num: 0
+  number: 0
 --- !u!1001 &1211826201
 PrefabInstance:
   m_ObjectHideFlags: 0
