@@ -12,6 +12,10 @@ public class Slow : MonoBehaviour
     {
         Player.GetComponent<PlayerMvmt>().moveSpeed = slow;
     }
+    private void OnCollisionStay(Collision collision)
+    {
+        Player.GetComponent<PlayerMvmt>().moveSpeed = slow;
+    }
     void OnCollisionExit (Collision other)
     {
         Player.GetComponent<PlayerMvmt>().moveSpeed = normal;

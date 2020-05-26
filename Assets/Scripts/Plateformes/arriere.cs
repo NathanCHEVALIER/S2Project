@@ -9,7 +9,8 @@ public class arriere : MonoBehaviour
 	{
 		if(other.gameObject)
 		{
-			other.transform.position = safepos ;
+			other.transform.position = safepos ;	
+
 		}
 		
 	}
