@@ -7,4 +7,42 @@
 		
 	</head>
 	
+	<body>
+		<header>
+			<h1>Décors et niveaux</br></h1>
+		</header>
+		
+		<section>
+			<table>
+				<tr>
+			
+					<td><h2>Différents menus</h2></td>
+			
+				</tr>
+				<tr>
+				
+					<td><img src="images/MainMenu.png" alt="texte" width="370"/></td>
+					<td><img src="images/LevelSelector.png" alt="texte" width="370"/></td>
+					<td><img src="images/Lobby.png" alt="texte" width="370"/></td>
+					<td><img src="images/EndLevel.png" alt="texte" width="370"/></td>
+				</tr>				
+			</table>
+			<table>
+				<tr>
+			
+					<td><h2>Niveaux</h2></td>
+			
+				</tr>
+				<tr>
+				
+					<td><img src="images/Level1.png" alt="texte" width="370"/></td>
+					<td><img src="images/Level2.png" alt="texte" width="370"/></td>
+					<td><img src="images/Level3.png" alt="texte" width="370"/></td>
+					<td><img src="images/Level4.png" alt="texte" width="370"/></td>
+				</tr>				
+			</table>
+		</section>
+		
+	</body>
+	
 </html>
