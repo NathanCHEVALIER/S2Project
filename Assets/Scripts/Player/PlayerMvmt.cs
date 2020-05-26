@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerMvmt : UnityEngine.MonoBehaviour
 {
     public float moveSpeed = 4f;
-    private float sprintSpeed = 6f;
+    private float sprintSpeed;
     public float jumpSpeed = 5f;
-    private bool IsGrounded;
+    private bool IsGrounded;   
 
     void OnCollisionStay(Collision collisionInfo)
     {
@@ -22,7 +22,7 @@ public class PlayerMvmt : UnityEngine.MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        sprintSpeed = moveSpeed + 2;
     }
     // Update is called once per frame
     void Update()
