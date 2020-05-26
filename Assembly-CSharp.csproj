@@ -141,6 +141,7 @@
     <Compile Include="Assets\Scripts\Plateformes\GoodPlateforme.cs" />
     <Compile Include="Assets\Scripts\Plateformes\LunchPadPlateform.cs" />
     <Compile Include="Assets\Scripts\Plateformes\PingPongPLateform.cs" />
+    <Compile Include="Assets\Scripts\Plateformes\PingPongY.cs" />
     <Compile Include="Assets\Scripts\Plateformes\Slow.cs" />
     <Compile Include="Assets\Scripts\Plateformes\arriere.cs" />
     <Compile Include="Assets\Scripts\Player\AnimatorControler.cs" />
