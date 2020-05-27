@@ -13,6 +13,7 @@ public class NetworkPlayer : Photon.PunBehaviour
     private bool IsRunning = false;
 
     private int playerID;
+    private string playerNickName;
     
     void Start()
     {
@@ -44,9 +45,10 @@ public class NetworkPlayer : Photon.PunBehaviour
         localCam.enabled = this.Status;
     }
 
-    public void setStatus(bool status, int id)
+    public void setStatus(bool status, int id, string playerName)
     {
         playerID = id;
+        playerNickName = playerName;
         if (!this.Status && status)
         {
             this.Status = status;
@@ -78,5 +80,10 @@ public class NetworkPlayer : Photon.PunBehaviour
     public int getID()
     {
         return playerID;
+    }
+    
+    public string getNickName()
+    {
+        return playerNickName;
     }
 }

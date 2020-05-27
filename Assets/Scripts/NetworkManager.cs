@@ -13,11 +13,15 @@ public class NetworkManager : Photon.PunBehaviour
     public string playerPrefabName = "Player";
     public GameObject NetManager;
     public GameObject playerUI;
+    public Button NameButton;
+    public TMP_InputField InputName;
+    public GameObject panel;
 
     public const string Version = "1.101";
     public const string RoomName = "Multiplayer";
 
     private int playerID;
+    private string playerNickName;
     private GameObject player;
     
     void Start()
@@ -28,11 +32,20 @@ public class NetworkManager : Photon.PunBehaviour
         DontDestroyOnLoad(NetManager);
         Transform button = playerUI.transform.Find("PlayButton");
         button.gameObject.SetActive(false);
+        playerNickName = "";
+        NameButton.onClick.AddListener(() =>
+        {
+            playerNickName = InputName.text;
+            InputName.gameObject.SetActive(false);
+            NameButton.gameObject.SetActive(false);
+            panel.gameObject.SetActive(false);
+
+        });
     }
 
     void Update()
     {
-        NetStatus.text = "Player" + playerID + ": " + PhotonNetwork.connectionStateDetailed.ToString();
+        NetStatus.text = playerNickName + ": " + PhotonNetwork.connectionStateDetailed.ToString();
         lobbyCam.enabled = true;
     }
 
@@ -89,7 +102,7 @@ public class NetworkManager : Photon.PunBehaviour
     void PrepareLevel(bool state)
     {
         NetworkPlayer NetPlayer = player.GetComponent<NetworkPlayer>();
-        NetPlayer.setStatus(state, playerID);
+        NetPlayer.setStatus(state, playerID, playerNickName);
         
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         foreach (var otherplayer in players)
@@ -99,15 +112,15 @@ public class NetworkManager : Photon.PunBehaviour
     }
     
     [PunRPC]
-    void PlayerFinished(int id, float time)
+    void PlayerFinished(int id, float time, string playerName)
     {
         LevelManager LvlManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
-        LvlManager.PlayerFinished(id, time);
+        LvlManager.PlayerFinished(id, time, playerName);
     }
 
-    public void sendScore(int id, float time)
+    public void sendScore(int id, float time, string playerName)
     {
-        photonView.RPC("PlayerFinished", PhotonTargets.All, id, time);
+        photonView.RPC("PlayerFinished", PhotonTargets.All, id, time, playerName);
     }
 
     public void BackToMenu()

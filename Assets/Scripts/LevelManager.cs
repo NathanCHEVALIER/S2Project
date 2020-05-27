@@ -23,8 +23,10 @@ public class LevelManager : MonoBehaviour
     public GameObject FinishZone;
 
     private int playerID;
+    private string playerNickName;
     private bool[] playersState;
     private float[] playersTime;
+    private string[] playersNickName;
     
     // Start is called before the first frame update
     void Start()
@@ -33,9 +35,11 @@ public class LevelManager : MonoBehaviour
         player = GameObject.FindWithTag("MyPlayer");
         NetPlayer = player.GetComponent<NetworkPlayer>();
         playerID = NetPlayer.getID();
+        playerNickName = NetPlayer.getNickName();
         playersState = new bool[] {false, false, false, false};
         playersTime = new float[4];
-        playerName.text = "Player " + playerID;
+        playersNickName = new string[4];
+        playerName.text = playerNickName;
         ScoresUI.text = "";
         TimesUI.text = "";
         BackButton.gameObject.SetActive(false);
@@ -90,7 +94,7 @@ public class LevelManager : MonoBehaviour
         running = false;
         NetPlayer.enableRunning(running);
         NetworkManager NetManager = GameObject.Find("NetworkManager").GetComponent<NetworkManager>();
-        NetManager.sendScore(playerID, playerTime);
+        NetManager.sendScore(playerID, playerTime, playerNickName);
     }
 
     private string time2str(float time)
@@ -101,10 +105,11 @@ public class LevelManager : MonoBehaviour
         return decPart + ":" + floatPart;
     }
     
-    public void PlayerFinished(int id, float time)
+    public void PlayerFinished(int id, float time, string playernName)
     {
         playersState[id - 1] = true;
         playersTime[id - 1] = time;
+        playersNickName[id - 1] = playernName;
     }
 
     public bool IsGameFinished()
@@ -142,7 +147,7 @@ public class LevelManager : MonoBehaviour
         
         for (int i = 0; i < PhotonNetwork.playerList.Length; i++)
         {
-            texte = texte + "Player " + (i+1) + "\n";
+            texte = texte +  playersNickName[i] + "\n";
             times = times + time2str(playersTime[i]) + "\n";
         }
         
