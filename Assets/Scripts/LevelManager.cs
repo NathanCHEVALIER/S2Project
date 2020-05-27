@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour
     public Transform BackButton;
     public Image backScore;
     public GameObject FinishZone;
+    public GameObject panel;
 
     private int playerID;
     private string playerNickName;
@@ -44,6 +45,7 @@ public class LevelManager : MonoBehaviour
         TimesUI.text = "";
         BackButton.gameObject.SetActive(false);
         backScore.gameObject.SetActive(false);
+        panel.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -155,5 +157,15 @@ public class LevelManager : MonoBehaviour
         ScoresUI.text = texte;
         BackButton.gameObject.SetActive(true);
         backScore.gameObject.SetActive(true);
+        panel.gameObject.SetActive(true);
     }
+
+    /*public void ScoreToSite(string Nickname, float score)
+    {
+        WebRequest request = WebRequest.Create("https://www.colordimension.soadia.com/scores.php?name=" + Nickname + "&score=" + score);
+        request.Method = "GET";
+        Stream dataStream = request.GetRequestStream();
+        dataStream.Write("", 0, 0);
+        dataStream.Close();
+    }*/
 }

@@ -34,6 +34,7 @@ ScriptsOnlyBuild:
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -53,6 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Shadow
@@ -851,6 +853,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11454}
     - Class: 114
+      Script: {instanceID: 11476}
+    - Class: 114
+      Script: {instanceID: 11672}
+    - Class: 114
       Script: {instanceID: 11886}
     - Class: 114
       Script: {instanceID: 12054}
@@ -862,8 +868,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12786}
     - Class: 114
       Script: {instanceID: 12854}
-    - Class: 114
-      Script: {instanceID: 13152}
     - Class: 114
       Script: {instanceID: 13200}
     - Class: 114
@@ -1439,7 +1443,7 @@ ScriptsOnlyBuild:
     className: OptionsSettings
   - hash:
       serializedVersion: 2
-      Hash: 8aa2dfe020f705e95ac46ff5e69c6564
+      Hash: 5e837e8db55620a3d344b633f9744830
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager
@@ -1715,7 +1719,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 598a9e822b03c60694bbda26382ecc47
+      Hash: 5d06ff5a8bdb8ce3515f598458937813
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelManager
@@ -2031,4 +2035,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LVL3.unity
   - Assets/Scenes/LVL4.unity
   - Assets/Scenes/Test Multi.unity
-  playerPath: D:/natha/Documents/Programming Hub/S2Project/Builds/New Unity Project.exe
+  playerPath: D:/natha/Documents/Programming Hub/S2Project/Builds/Color Dimension.exe

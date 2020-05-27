@@ -106,7 +106,8 @@ h1{
 	color: #333333;
 	margin: 10px 0px;
 }
-button{
+a.button{
+	display: inline-block;
 	padding: 5px 15px;
 	font-size: 22px;
 	border: none;
@@ -118,7 +119,7 @@ button{
 	transition: all ease-in-out 0.3s;
 	border-radius: 3px;
 }
-button:hover{
+a.button:hover{
 	background-color: purple;
 }
 
@@ -140,7 +141,7 @@ button:hover{
 	transform: translateX(-50%);
 	text-align: center;
 }
-#sc-team > button{
+#sc-team > a{
 	position: absolute;
 	top: 500px;
 	left: 50vw;
