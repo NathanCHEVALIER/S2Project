@@ -115,6 +115,12 @@ public class NetworkManager : Photon.PunBehaviour
         PhotonNetwork.Disconnect();
         Destroy(lobbyCam);
         Destroy(player);
+        
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var otherplayer in players)
+        {
+            Destroy(otherplayer);
+        }
         Destroy(NetManager);
         SceneManager.LoadScene("Main menu");
     }

@@ -120,8 +120,26 @@ public class LevelManager : MonoBehaviour
 
     public void displayScore()
     {
+        //int[] playersRank = new int[] {0, 1, 2, 3};
         string texte = "";
         string times = "";
+        /*
+        for (int i = 0; i < PhotonNetwork.playerList.Length; i++)
+        {
+            for (int c = i; c < PhotonNetwork.playerList.Length; c++)
+            {
+                if (playersTime[c] > playersTime[i])
+                {
+                    int a = playersRank[c];
+                    float b = playersTime[c];
+                    playersRank[c] = playersRank[i];
+                    playersTime[c] = playersTime[i];
+                    playersRank[i] = a;
+                    playersTime[i] = b;
+                }
+            }
+        }*/
+        
         for (int i = 0; i < PhotonNetwork.playerList.Length; i++)
         {
             texte = texte + "Player " + (i+1) + "\n";
