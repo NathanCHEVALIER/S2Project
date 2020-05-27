@@ -149,6 +149,7 @@
             <e p="GoodPlateforme.cs" t="Include" />
             <e p="LunchPadPlateform.cs" t="Include" />
             <e p="PingPongPLateform.cs" t="Include" />
+            <e p="PingPongY.cs" t="Include" />
             <e p="Slow.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
